@@ -1,28 +1,29 @@
-# ATM:
+# ATM
 
 **Responsible: Balan Alexandru, Nagy Andrea, Ilie Cristi**
 
 This class should handle everything realted to an actual ATM, such as: 
 
 Planned functionality: 
-[ ] 1. Ability to have multiple accounts (implement an IBAN system, like in a real bank, each account being able to be of different types, like an economies account, a current account etc)
-[ ] 2. Ability to "withdraw" money from the ATM 
-[ ] 3. Ability to consult balance (preferably on a monthly/yearly basis)
-[ ] 4. Ability to send money from an account to another
+1. Ability to have multiple accounts (implement an IBAN system, like in a real bank, each account being able to be of different types, like an economies account, a current account etc)
+2. Ability to "withdraw" money from the ATM 
+3. Ability to consult balance (preferably on a monthly/yearly basis)
+4. Ability to send money from an account to another
 
-# Client:
+# Client
 **Responsible: Nagy Andrea, Ilie Cristi**
 
 This class should handle client-related operations, such as:
 
-[ ] 1. Read/save client info from file
-[ ] 2. Storing client information (name, address, age, sex, accounts IDs, etc)
+1. Read/save client info from file
+2. Storing client information (name, address, age, sex, accounts IDs, etc)
 
-# Main:
+# Main
 **Responsible: Rusu Eduard**
 
-[ ] 1. Initialize everything in here and maybe add a menu. 
-[ ] 2. Maybe add a GUI (?)
+1. Initialize everything in here and maybe add a menu. 
+2. Maybe add a GUI (?)
+
 
 1. Basic implementation: getters, setters 
 USE PRIVATE VARIABLES
@@ -84,6 +85,8 @@ System.out.println(test);
 ```
 
 In the above code, if a string is imputed instead of an integer, java.util.InputMismatchException is thrown and the program stops execution.
+
+
 ![exception handling](http://alexbam.me/imgs/1.png)
 
 This is bothersome.
@@ -99,6 +102,7 @@ try{
 	System.out.println("You must input a number!");
 }
 ```
+
 ![exception handling](http://alexbam.me/imgs/2.png)
 
 This way the program doesn't just stop working the second someone thought 2 should be written as "two".

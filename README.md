@@ -28,7 +28,10 @@ This class should handle client-related operations, such as:
 # Basic implementation, tips & tricks
 
 1. Class Structure
+
+
 USE PRIVATE VARIABLES
+
 Ex: `private int number;`
 
 To work with these variables within the class, just call this.variable
@@ -56,6 +59,7 @@ REMARK: FOR A FUNCTION WHICH RETURNS A VALUE YOU HAVE TO USE return BEFORE WHAT 
 
 2. Method implementation
 
+
 a. Try using clear and miningful method names (not names like coolfunctionbro). 
 For ex, if you write a part of the "withdraw" money functionality, you may need a function that sets the new balance.
 A good name for that would be something like "setBalance" or "setNewBalance". 
@@ -78,6 +82,8 @@ Can be written as:
 c. Test everything you implement before pushing your code! ALWAYS test for any possible errors.
 
 3. Error Handling
+
+
 Your code must have a way to check for errors.
 For example:
 ```

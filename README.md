@@ -25,7 +25,9 @@ This class should handle client-related operations, such as:
 2. Maybe add a GUI (?)
 
 
-1. Basic implementation: getters, setters 
+# Basic implementation, tips & tricks
+
+1. Class Structure
 USE PRIVATE VARIABLES
 Ex: `private int number;`
 

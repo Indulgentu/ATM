@@ -21,7 +21,7 @@ This class should handle client-related operations, such as:
 # Main
 **Responsible: Rusu Eduard**
 
-1. Initialize everything in here and maybe add a menu. 
+1. Initialize everything in here and add a menu. 
 2. Maybe add a GUI (?)
 
 
@@ -37,7 +37,7 @@ Ex: `private int number;`
 To work with these variables within the class, just call this.variable
 ex: `this.number;`
 
-To work with these variables outside the class, you have to created getters and setters:
+To work with these variables outside the class, you have to create getters and setters:
 
 - Setters: methods which set a private variable 
 ex: 
@@ -60,7 +60,7 @@ REMARK: FOR A FUNCTION WHICH RETURNS A VALUE YOU HAVE TO USE return BEFORE WHAT 
 2. Method implementation
 
 
-a. Try using clear and miningful method names (not names like coolfunctionbro). 
+a. Try using clear and meaningful method names (not names like coolfunctionbro). 
 For ex, if you write a part of the "withdraw" money functionality, you may need a function that sets the new balance.
 A good name for that would be something like "setBalance" or "setNewBalance". 
 I recommend starting with a lowercase letter and continuing with uppercase like in the above example.
@@ -92,7 +92,7 @@ int test = sc.nextInt();
 System.out.println(test);
 ```
 
-In the above code, if a string is imputed instead of an integer, java.util.InputMismatchException is thrown and the program stops execution.
+In the above code, if a string is input instead of an integer, java.util.InputMismatchException is thrown and the program stops execution.
 
 
 ![exception handling](http://alexbam.me/imgs/1.png)

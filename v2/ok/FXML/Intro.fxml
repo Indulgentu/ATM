@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="section_root" prefHeight="445.0" prefWidth="805.0" style="-fx-background-color: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ok.Controllers.SectionController">
+   <children>
+      <ImageView fx:id="img_logo" fitHeight="150.0" fitWidth="200.0" layoutX="270.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/res/img/logo_transparent.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbl_insert_card" graphicTextGap="10.0" layoutX="215.0" layoutY="355.0" lineSpacing="100.0" prefHeight="90.0" prefWidth="338.0" text="Ｐ Ｌ Ｅ Ａ Ｓ Ｅ　Ｉ Ｎ Ｓ Ｅ Ｒ Ｔ　Ｃ Ａ Ｒ Ｄ" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

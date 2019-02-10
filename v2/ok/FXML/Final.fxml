@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="final" fx:id="second_root" prefHeight="495.0" prefWidth="710.0" stylesheets="@/res/css/Main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ok.Controllers.SecondaryController">
+   <children>
+      <BorderPane prefHeight="495.0" prefWidth="721.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="431.0" prefWidth="157.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="9.0" layoutY="9.0" prefHeight="39.0" prefWidth="127.0" text="ＱＵＩＣＫ　ＴＲＡＮＳＡＣＴＩＯＮＳ" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+                  <JFXButton id="btn_final" fx:id="btn_quick_trans" buttonType="RAISED" layoutX="19.0" layoutY="76.0" onAction="#quickWithdraw" prefHeight="39.0" prefWidth="100.0" ripplerFill="#ff9604" text="50  ＬＥＩ" textAlignment="CENTER" />
+                  <JFXButton id="btn_final" fx:id="btn_deposit" buttonType="RAISED" layoutX="16.0" layoutY="293.0" onAction="#initDeposit" prefHeight="39.0" prefWidth="100.0" ripplerFill="#ff9604" text="ＤＥＰＯＳＩＴ" textAlignment="CENTER" />
+                  <JFXButton id="btn_final" fx:id="btn_quick_trans1" buttonType="RAISED" layoutX="17.0" layoutY="149.0" onAction="#quickWithdraw" prefHeight="39.0" prefWidth="100.0" ripplerFill="#ff9604" text="100  ＬＥＩ" textAlignment="CENTER" />
+                  <JFXButton id="btn_final" fx:id="btn_withdraw1" buttonType="RAISED" layoutX="16.0" layoutY="222.0" onAction="#initWithdraw" prefHeight="39.0" prefWidth="100.0" ripplerFill="#ff9604" text="ＷＩＴＨＤＲＡＷ" textAlignment="CENTER" />
+               </children>
+            </AnchorPane>
+         </left>
+         <top>
+            <AnchorPane prefHeight="64.0" prefWidth="721.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="84.0" fitWidth="174.0" layoutX="6.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/res/img/logo_transparent.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="121.0" layoutY="71.0" text="Ｉｎ　ＡＥＳＴＨＥＴＩＣ　ｗｅ　ｔｒｕｓｔ．" textFill="WHITE" />
+                  <Label layoutX="535.0" layoutY="42.0" text="Ｆｉｎｅ　ｄａｙ　ｔｏ　ｙｏｕ, " textFill="WHITE" />
+                  <Label fx:id="lbl_welcome" layoutX="575.0" layoutY="66.0" prefHeight="17.0" prefWidth="82.0" style="-fx-text-fill: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);" text="NAME" textFill="#5a59b5" />
+                  <ImageView fitHeight="96.0" fitWidth="150.0" layoutX="639.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/res/img/ok.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <right>
+            <AnchorPane prefHeight="404.0" prefWidth="76.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="-3.0" layoutY="3.0" prefHeight="39.0" prefWidth="127.0" text="ＮＯＮ－ＣＡＳＨ　ＴＲＡＮＳＡＣＴＩＯＮＳ" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+                  <JFXButton id="btn_final" fx:id="btn_accs" buttonType="RAISED" layoutX="12.0" layoutY="65.0" onAction="#initAccs" prefHeight="39.0" prefWidth="100.0" ripplerFill="#ff9604" text="ＡＣＣＯＵＮＴＳ" textAlignment="CENTER" />
+                  <JFXButton id="btn_final" fx:id="btn_cancel" buttonType="RAISED" layoutX="12.0" layoutY="133.0" onAction="#cancel" prefHeight="39.0" prefWidth="100.0" ripplerFill="#ff9604" text="ＣＡＮＣＥＬ" textAlignment="CENTER" />
+               </children>
+            </AnchorPane>
+         </right>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lbl_currbalance" layoutX="177.0" layoutY="97.0" prefHeight="17.0" prefWidth="127.0" text="MONEY" textFill="#fff108">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font></Label>
+                  <ImageView fitHeight="39.0" fitWidth="46.0" layoutX="124.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@/res/img/dollar.gif" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="110.0" layoutY="65.0" text="ＣＵＲＲＥＮＴ　ＡＣＣＯＵＮＴ　ＢＡＬＡＮＣＥ" textFill="WHITE" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+      <AnchorPane fx:id="cancel_overlay" disable="true" layoutX="10.0" layoutY="10.0" opacity="0.0" prefHeight="516.0" prefWidth="745.0" style="-fx-background-color: -fx-primary-gradient;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="img_logo_cancel" fitHeight="84.0" fitWidth="174.0" layoutX="268.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@/res/img/logo_transparent.png" />
+               </image>
+            </ImageView>
+            <Group fx:id="group_text" layoutX="203.0" layoutY="328.0">
+               <children>
+                  <Label text="ＴＨＡＮＫ　ＹＯＵ　ＦＯＲ　ＵＳＩＮＧ　ＡＥＳＴＨＥＴＩＣ　ＢＡＮＫ．" textFill="WHITE" />
+                  <Label layoutX="17.0" layoutY="30.0" text="ＰＬＥＡＳＥ　ＷＡＩＴ　ＦＯＲ　ＴＨＥ　ＲＥＴＵＲＮ　ＯＦ　ＴＨＥ　ＣＡＲＤ．" textFill="WHITE" />
+               </children>
+            </Group>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

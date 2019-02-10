@@ -1,0 +1,1 @@
+java -jar AESTHETICBANK.jar

@@ -50,13 +50,6 @@ public class Client {
 		LastName = lastName;
 	}
 	
-	public int getAge() {
-		return Age;
-	}
-	
-	public void setAge(int age) {
-		Age = age;
-	}
 	
 	public int getAccID() {
 		return accID;

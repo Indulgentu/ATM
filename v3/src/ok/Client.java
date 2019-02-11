@@ -1,7 +1,5 @@
 package ok;
 
-import java.util.HashMap;
-
 public class Client {
 
 	private String FirstName;

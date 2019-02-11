@@ -19,7 +19,7 @@ public class Client {
 	private String IBAN;
 	//password (4 digit)
 	private int pw;
-	//current money available (in RON i guess)
+	//current money available
 	private double currentmoney;
 	private HashMap<String, Integer> accounts = new HashMap<>();
 	

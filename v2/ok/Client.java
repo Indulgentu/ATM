@@ -58,6 +58,13 @@ public class Client {
 	public void setAccID(int accID) {
 		this.accID = accID;
 	}
+	public int getAge() {
+		return Age;
+	}
+
+	public void setAge(int age) {
+		Age = age;
+	}
 	
 	public int getGend() {
 		return this.Gend;

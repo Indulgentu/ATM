@@ -1,7 +1,7 @@
 <?php
 if(isset($_POST)){
     $user = json_decode($_POST['account'], true);
-    $mysqli = new mysqli('localhost', 'alexbamm_root', 'nissan123', 'alexbamm_unitbv');
+    $mysqli = new mysqli('localhost', 'username', 'pass', 'alexbamm_unitbv');
 	$result = $mysqli->query("SELECT * FROM `bambank_accounts` WHERE `accID`='" . $mysqli->real_escape_string($user['accID']) . "' LIMIT 1;");
 	$result2 = $mysqli->query("SELECT * FROM `bambank_accounts` WHERE `userid`='" . $mysqli->real_escape_string($user['userid']) . "' LIMIT 1;");
     if($result->num_rows > 0){

@@ -9,7 +9,7 @@ public class Client {
 	private String middleName = "";
 	//Age
 	private int Age;
-	//account Id (6 digit)
+	//account Id (email)
 	private int accID;
 	//gender (F/M)
 	private char Gend;

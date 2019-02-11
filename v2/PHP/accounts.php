@@ -1,6 +1,6 @@
 <?php
 
-	$mysqli = new mysqli('localhost', 'alexbamm_root', 'nissan123', 'alexbamm_unitbv');
+	$mysqli = new mysqli('localhost', 'username', 'pass', 'alexbamm_unitbv');
 	$q = "SELECT * FROM `bambank_accounts` WHERE `userid`='" . $mysqli->real_escape_string($_GET['userid']) . "'";
 	if(!$query = $mysqli->query($q)) { die(json_encode(array("result" => "NOT_OK", "error_msg" => $mysqli->error))); }
 	$arr = array();

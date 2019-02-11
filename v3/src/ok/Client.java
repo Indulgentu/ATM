@@ -13,7 +13,6 @@ public class Client {
 	private int Age;
 	private int accID;
 	private int Gend;
-	private HashMap<String, Integer> accounts = new HashMap<>();
 	
 	
 	public Client(String name) {
@@ -86,18 +85,6 @@ public class Client {
 	
 	public String getRegistered() {
 		return this.registered;
-	}
-	
-	public HashMap<String, Integer> getAccounts(){
-		return this.accounts;
-	}
-	
-	public void addAccount(String IBAN, int type) {
-		this.accounts.put(IBAN, type);
-	}
-
-	public void auth(String nextLine) {
-		
 	}
 
 	public void setMiddleName(String string) {

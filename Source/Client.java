@@ -7,7 +7,6 @@ public class Client {
 	private String FirstName;
 	private String LastName;
 	private String middleName = "";
-	
 	//Age
 	private int Age;
 	//account Id (6 digit)

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="login_root" fx:id="login_root" prefHeight="513.0" prefWidth="806.0" style="-fx-background-color: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);;" stylesheets="@../../res/css/Main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ok.Controllers.LoginController">
+   <children>
+      <ImageView fx:id="img_login_logo" fitHeight="150.0" fitWidth="200.0" layoutX="264.0" layoutY="103.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@/res/img/logo_transparent.png" />
+         </image>
+      </ImageView>
+      <Group fx:id="group_login" layoutX="218.0" layoutY="293.0" opacity="0.0">
+         <children>
+            <JFXPasswordField fx:id="txt_pin" focusColor="#8be5cc" labelFloat="true" layoutX="79.0" layoutY="62.0" onAction="#login" promptText="Ｐ Ｉ Ｎ " />
+            <JFXTextField fx:id="txt_email" focusColor="#8be5cc" labelFloat="true" layoutX="79.0" promptText="Ｅ －Ｍ Ａ Ｉ Ｌ" />
+            <JFXButton fx:id="btn_signup" layoutY="124.0" prefHeight="57.0" prefWidth="135.0" text="Ｓ Ｉ Ｇ Ｎ  Ｕ Ｐ" />
+            <JFXButton fx:id="btn_login" buttonType="RAISED" layoutX="155.0" layoutY="124.0" onAction="#login" prefHeight="57.0" prefWidth="135.0" ripplerFill="WHITE" text="Ｌ Ｏ Ｇ Ｉ Ｎ" />
+         </children>
+      </Group>
+   </children>
+</AnchorPane>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="acc_root" prefHeight="506.0" prefWidth="723.0" style="-fx-background-color: -fx-primary;" stylesheets="@../../res/css/Main.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ok.Controllers.AccountsController">
+   <children>
+      <BorderPane fx:id="acc_pane" prefHeight="506.0" prefWidth="723.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <JFXListView fx:id="list_accounts" depth="1" onMousePressed="#showOptions" showTooltip="true" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <AnchorPane prefHeight="64.0" prefWidth="721.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="84.0" fitWidth="174.0" layoutX="6.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../res/img/logo_transparent.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="121.0" layoutY="71.0" text="Ｉｎ　ＡＥＳＴＨＥＴＩＣ　ｗｅ　ｔｒｕｓｔ．" textFill="WHITE" />
+                  <Label layoutX="535.0" layoutY="42.0" text="Ｆｉｎｅ　ｄａｙ　ｔｏ　ｙｏｕ, " textFill="WHITE" />
+                  <Label fx:id="lbl_name" layoutX="575.0" layoutY="66.0" prefHeight="17.0" prefWidth="82.0" style="-fx-text-fill: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);" text="NAME" textFill="#5a59b5" />
+                  <ImageView fitHeight="96.0" fitWidth="150.0" layoutX="639.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../res/img/ok.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane prefHeight="415.0" prefWidth="130.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="9.0" layoutY="2.0" prefHeight="39.0" prefWidth="127.0" text="ＡＣＣＯＵＮＴ　ＯＰＥＲＡＴＩＯＮＳ" textAlignment="CENTER" textFill="WHITE" wrapText="true" />
+                  <JFXButton id="btn_final" fx:id="btn_monthly" buttonType="RAISED" layoutX="19.0" layoutY="65.0" onAction="#showMonthlyPrintout" prefHeight="39.0" prefWidth="100.0" ripplerFill="#ff9604" text="ＭＯＮＴＨＬＹ" textAlignment="CENTER" />
+                  <JFXButton id="btn_final" fx:id="btn_yearly" buttonType="RAISED" layoutX="17.0" layoutY="144.0" onAction="#showYearlyPrintout" prefHeight="39.0" prefWidth="100.0" ripplerFill="#ff9604" text="ＹＥＡＲＬＹ" textAlignment="CENTER" />
+                  <JFXButton id="btn_final" fx:id="btn_full" buttonType="RAISED" layoutX="16.0" layoutY="222.0" onAction="#showPrintout" prefHeight="39.0" prefWidth="100.0" ripplerFill="#ff9604" text="ＦＵＬＬ" textAlignment="CENTER" />
+                  <JFXButton id="btn_final" fx:id="btn_send" buttonType="RAISED" layoutX="18.0" layoutY="294.0" onAction="#sendMoney" prefHeight="39.0" prefWidth="100.0" ripplerFill="#ff9604" text="ＳＥＮＤ　ＭＯＮＥＹ" textAlignment="CENTER">
+                     <font>
+                        <Font size="11.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="415.0" prefWidth="130.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="41.0" layoutY="14.0" text="ＡＣＴＩＯＮＳ" textFill="WHITE" />
+                  <JFXButton id="btn_final" fx:id="btn_back" buttonType="RAISED" layoutX="17.0" layoutY="67.0" onAction="#goBack" prefHeight="39.0" prefWidth="100.0" ripplerFill="#ff9604" text="ＧＯ　ＢＡＣＫ" textAlignment="CENTER" />
+                  <JFXButton id="btn_final" fx:id="btn_cancel" buttonType="RAISED" layoutX="17.0" layoutY="141.0" onAction="#cancel" prefHeight="39.0" prefWidth="100.0" ripplerFill="#ff9604" text="ＣＡＮＣＥＬ" textAlignment="CENTER" />
+               </children>
+            </AnchorPane>
+         </right>
+      </BorderPane>
+      <AnchorPane fx:id="cancel_overlay" disable="true" opacity="0.0" prefHeight="506.0" prefWidth="735.0" style="-fx-background-color: -fx-primary-gradient;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="img_logo_cancel" fitHeight="84.0" fitWidth="174.0" layoutX="268.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../res/img/logo_transparent.png" />
+               </image>
+            </ImageView>
+            <Group fx:id="group_text" layoutX="203.0" layoutY="328.0">
+               <children>
+                  <Label text="ＴＨＡＮＫ　ＹＯＵ　ＦＯＲ　ＵＳＩＮＧ　ＡＥＳＴＨＥＴＩＣ　ＢＡＮＫ．" textFill="WHITE" />
+                  <Label layoutX="17.0" layoutY="30.0" text="ＰＬＥＡＳＥ　ＷＡＩＴ　ＦＯＲ　ＴＨＥ　ＲＥＴＵＲＮ　ＯＦ　ＴＨＥ　ＣＡＲＤ．" textFill="WHITE" />
+               </children>
+            </Group>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

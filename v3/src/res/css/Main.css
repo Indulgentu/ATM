@@ -1,0 +1,69 @@
+* {
+	-fx-primary: #8be5cc; 
+	-fx-primary-gradient: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+	-fx-secondary-gradient: linear-gradient(to top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+	-fx-secondary: #FFFF8D;
+	-fx-accent: #B2B2B2;
+}
+
+#final{
+	-fx-background-image: url("../img/moon.gif");	
+    -fx-background-size: stretch;
+    -fx-background-position: center center;
+    
+	
+}
+
+#btn_final {
+	-fx-background-color: -fx-secondary-gradient;
+}
+
+#btn_login {
+	-fx-background-color: linear-gradient(to top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+#btn_signup {
+	-fx-background-color: linear-gradient(to top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+}
+
+#login_root {
+	-fx-bagkround-color: -fx-primary;
+}
+
+.dialog-pane{
+	-fx-border-color: black;
+	-fx-border-width: 0.5px;
+	-fx-background-color: #c0c0c0;
+ }
+
+/**Costumization of The Bar where the buttons are located**/
+.dialog-pane > .button-bar > .container {
+
+}
+
+.dialog-pane > .content.label {
+}
+
+/**Costumization of DialogPane Header**/
+.dialog-pane:header .header-panel {
+ 
+}
+
+.dialog-pane:header .header-panel .label{
+}
+
+
+/**Costumization of Buttons**/
+.dialog-pane .button{
+	-fx-background-color: #c0c0c0;
+	-fx-border-color: black;
+	-fx-border-width: 0.5px 2px 2px 0.5px;
+	-fx-border-style: solid;
+ }
+
+.dialog-pane .button:pressed{     
+	-fx-background-color: #c2c6ca;
+	-fx-border-color: black;
+	-fx-border-width: 1px;
+	-fx-border-style: solid;
+ }

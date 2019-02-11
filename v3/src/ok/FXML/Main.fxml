@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="atm_root" prefHeight="720.0" prefWidth="1041.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ok.Controllers.MainController">
+   <children>
+      <BorderPane layoutY="-169.0" prefHeight="533.0" prefWidth="648.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane prefHeight="561.0" prefWidth="152.0" style="-fx-background-color: #a3aab0;" BorderPane.alignment="CENTER">
+               <children>
+                  <Group fx:id="btn_left_fourth" layoutX="48.0" layoutY="406.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="4.0" layoutY="-4.0" stroke="WHITE" strokeType="INSIDE" width="63.0" />
+                        <Circle fill="WHITE" layoutX="10.0" layoutY="10.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle layoutX="10.0" layoutY="10.0" radius="10.0" stroke="BLACK" strokeType="INSIDE">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Circle>
+                     </children>
+                  </Group>
+                  <Group fx:id="btn_left_third" layoutX="48.0" layoutY="323.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="4.0" layoutY="-4.0" stroke="WHITE" strokeType="INSIDE" width="63.0" />
+                        <Circle fill="WHITE" layoutX="10.0" layoutY="10.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle layoutX="10.0" layoutY="10.0" radius="10.0" stroke="BLACK" strokeType="INSIDE">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Circle>
+                     </children>
+                  </Group>
+                  <Group fx:id="btn_left_second" layoutX="48.0" layoutY="238.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="4.0" layoutY="-4.0" stroke="WHITE" strokeType="INSIDE" width="63.0" />
+                        <Circle fill="WHITE" layoutX="10.0" layoutY="10.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle layoutX="10.0" layoutY="10.0" radius="10.0" stroke="BLACK" strokeType="INSIDE">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Circle>
+                     </children>
+                  </Group>
+                  <Group fx:id="btn_left_first" layoutX="48.0" layoutY="149.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="4.0" layoutY="-4.0" stroke="WHITE" strokeType="INSIDE" width="63.0" />
+                        <Circle fill="WHITE" layoutX="10.0" layoutY="10.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle layoutX="10.0" layoutY="10.0" radius="10.0" stroke="BLACK" strokeType="INSIDE">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Circle>
+                     </children>
+                  </Group>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+         </left>
+         <right>
+            <AnchorPane prefHeight="561.0" prefWidth="152.0" style="-fx-background-color: #a3aab0;" BorderPane.alignment="CENTER">
+               <children>
+                  <Group fx:id="btn_right_fourth" layoutX="48.0" layoutY="406.0" rotate="180.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="4.0" layoutY="-4.0" stroke="WHITE" strokeType="INSIDE" width="63.0" />
+                        <Circle fill="WHITE" layoutX="10.0" layoutY="10.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle layoutX="10.0" layoutY="10.0" radius="10.0" stroke="BLACK" strokeType="INSIDE">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Circle>
+                     </children>
+                  </Group>
+                  <Group fx:id="btn_right_third" layoutX="48.0" layoutY="323.0" rotate="180.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="4.0" layoutY="-4.0" stroke="WHITE" strokeType="INSIDE" width="63.0" />
+                        <Circle fill="WHITE" layoutX="10.0" layoutY="10.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle layoutX="10.0" layoutY="10.0" radius="10.0" stroke="BLACK" strokeType="INSIDE">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Circle>
+                     </children>
+                  </Group>
+                  <Group fx:id="btn_right_second" layoutX="48.0" layoutY="238.0" rotate="180.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="4.0" layoutY="-4.0" stroke="WHITE" strokeType="INSIDE" width="63.0" />
+                        <Circle fill="WHITE" layoutX="10.0" layoutY="10.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle layoutX="10.0" layoutY="10.0" radius="10.0" stroke="BLACK" strokeType="INSIDE">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Circle>
+                     </children>
+                  </Group>
+                  <Group fx:id="btn_right_first" layoutX="48.0" layoutY="149.0" rotate="180.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="28.0" layoutX="4.0" layoutY="-4.0" stroke="WHITE" strokeType="INSIDE" width="63.0" />
+                        <Circle fill="WHITE" layoutX="10.0" layoutY="10.0" radius="20.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle layoutX="10.0" layoutY="10.0" radius="10.0" stroke="BLACK" strokeType="INSIDE">
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </Circle>
+                     </children>
+                  </Group>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+         </right>
+         <bottom>
+            <AnchorPane prefHeight="145.0" prefWidth="697.0" style="-fx-background-color: #a3aab0;" BorderPane.alignment="CENTER">
+               <children>
+                  <Group fx:id="atm_group_indicator" layoutX="425.0" layoutY="23.0" onMouseClicked="#insertCard" AnchorPane.leftAnchor="377.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#294165" height="70.0" layoutX="-39.0" layoutY="9.0" stroke="BLACK" strokeType="INSIDE" width="270.0">
+                           <effect>
+                              <DropShadow color="#00ff44" />
+                           </effect>
+                        </Rectangle>
+                        <Rectangle fx:id="atm_blinker" arcHeight="5.0" arcWidth="5.0" fill="#57d58e" height="10.0" layoutX="21.0" layoutY="39.0" stroke="BLACK" strokeType="INSIDE" width="178.0" />
+                        <Circle fill="WHITE" layoutX="-7.0" layoutY="44.0" radius="20.0" stroke="BLACK" strokeType="INSIDE" style="-fx-fill: #a3aab0;" />
+                        <ImageView fitHeight="32.0" fitWidth="38.0" layoutX="-23.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../res/img/cc.png" />
+                           </image>
+                        </ImageView>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="14.0" layoutX="34.0" layoutY="86.0" stroke="BLACK" strokeType="INSIDE" width="120.0" />
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" height="3.0" layoutX="45.0" layoutY="92.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+                     </children>
+                  </Group>
+               </children>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <AnchorPane fx:id="atm_main" prefHeight="582.0" prefWidth="586.0" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

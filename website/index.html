@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ＡＥＳＴＨＥＴＩＣ　ＢＡＮＫ</title>	
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			vertical-align: baseline;
+			--primary-gradient: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+			--secondary-gradient: linear-gradient(to top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+		}
+		
+		html {
+			height: 100%;
+			width: 100%;
+		}
+		
+		body {
+			background-image: linear-gradient(to top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+		}
+		
+		.wrapper {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center; 
+			align-items: center;
+			flex-direction: column;
+		}	
+		
+		.img_logo {
+			position: relative;
+			width: 200px;
+			height: 100px;
+			animation-name: example;
+			animation-duration: 1.5s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate-reverse;
+		}
+		
+		.wrapper p {
+			margin-top: 25px;
+				
+			font-weight: 100;	
+			animation-name: fadeTransition;
+			animation-duration: 1s;
+			animation-iteration-count: infinite;
+			animation-direction: alternate-reverse;
+		}
+		
+		.wrapper span {
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			bottom: 0px;
+			right: 0px;
+			margin-right: 20px;
+			margin-bottom: 20px;
+			text-align: center;
+			vertical-align: middle;
+			line-height: 30px;    
+		}
+		
+		@keyframes fadeTransition {
+			from { opacity: 0; }
+			to { opacity: 1; }
+		}
+		
+		@keyframes example {
+			0%   { top: -10px; }
+			100%  { top: 10px; }
+		}
+		
+		@media (max-width: 500px){
+			p {
+				font-size: 4.4vw;
+			}
+		}
+
+		@media (min-width: 500px){
+			p {
+				font-size: 25px;
+			}
+		}
+	</style>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+<audio id="theme" src="./audio/theme.mp3" autoplay loop></audio>
+<div class="wrapper">
+	<img class="img_logo" alt="ＡＥＳＴＨＥＴＩＣ　Logo" src="./img/logo.png">
+	<p class="text">ＰＬＥＡＳＥ　ＩＮＳＥＲＴ　ＣＡＲＤ</p>
+	<span><img id="volume" src="./img/icons/volume.png" alt="Volume" onClick="mute();"/></span>
+</div>
+<script type="text/javascript">
+var muted = 0;
+function mute(){
+	if(muted == 0){
+		document.getElementById("theme").pause();
+		document.getElementById("volume").src = "./img/icons/volume_muted.png";
+		muted = 1;
+	}else{
+		document.getElementById("theme").play();
+		document.getElementById("volume").src = "./img/icons/volume.png";
+		muted = 0;
+	}
+}
+
+</script>
+</body>
+</html>

@@ -10,20 +10,6 @@ Planned functionality:
 3. Ability to consult balance (preferably on a monthly/yearly basis)
 4. Ability to send money from an account to another
 
-# Client
-**Responsible: Balan Alexandru, Nagy Andrea, Ilie Cristi**
-
-This class should handle client-related operations, such as:
-
-1. Read/save client info from file
-2. Storing client information (name, address, age, sex, accounts IDs, etc)
-
-# Main
-**Responsible: Rusu Eduard**
-
-1. Initialize everything in here and add a menu. 
-2. Maybe add a GUI (?)
-
 
 # Basic implementation, tips & tricks
 

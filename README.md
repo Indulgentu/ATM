@@ -11,7 +11,7 @@ Planned functionality:
 4. Ability to send money from an account to another
 
 # Client
-**Responsible: Nagy Andrea, Ilie Cristi**
+**Responsible: Balan Alexandru, Nagy Andrea, Ilie Cristi**
 
 This class should handle client-related operations, such as:
 
